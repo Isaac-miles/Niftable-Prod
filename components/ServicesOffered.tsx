@@ -7,7 +7,7 @@ function ServicesOffered() {
 
     <div className='  w-full content-center  bg-black'>
       
-       <div className="group w-full px-0 pt-10 pb-12 xsm:overflow-x-scroll xsm:p-0 " >
+       <div className="group w-full px-0 pt-10 pb-12 xsm:scrollbar-hide xsm:overflow-x-scroll xsm:p-0 " >
 
           <div className="flex-row space-x-2 sm:space-y-2 w-full xsm:flex" >
               {HorizontalCardInformation.map((card) => (

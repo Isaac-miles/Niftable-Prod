@@ -4,7 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import localFont from "next/font/local";
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LimitlessLogo from "../../assets/icons/LimitlessLogo";
 import ProfitAndGrowthLogo from "@/assets/icons/ProfitAndGrowthLogo";
 import TransparentAndFairLogo from "@/assets/icons/TransparentAndFairLogo";
@@ -24,12 +24,12 @@ export default function BasicAccordion({
   logoTitle,
 }: AccordionProps) {
   return (
-    <div className="flex gap-10 items-start flex-col h-[82]">
+    <div className="flex gap-10 items-start flex-col h-[82] bg-black">
       <Accordion
         className={`${satoshi.className} bg-black text-white font-light border-x-0 border-b-2 border-[#13171d]`}
       >
         <AccordionSummary
-          // expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >

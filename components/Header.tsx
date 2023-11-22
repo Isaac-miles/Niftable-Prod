@@ -7,23 +7,20 @@ import { FaBars } from "react-icons/fa6";
 import ListStyleHorizontal from './ui-utils/listStyleHorizontal';
 import localFont from 'next/font/local'
 const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
-import {HiOutlineXMark } from "react-icons/hi2";
+
 
 const Header = () => {
 
   const [toggle, setToggle] = useState(false)
 
-
-    // const logo = new URL(`/public/img/logo.png`, import.meta.url).href
-  
-
+    const logo = new URL(`/public/logo.png`, import.meta.url).href
   return (
    <header className=" z-40" >
 
     <div className="flex items-center space-x-2 md:space-x-10 ">
       <Image 
-      src='/logo.png'
-      alt="netflix"
+      src={logo}
+      alt="niftables"
       width={100}
       height={100}
       priority
