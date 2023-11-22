@@ -31,7 +31,7 @@ function Footer() {
 
     <div id='info' className='leg:flex  md:flex items-center'>
       <ul className='flex gap-8 m-2 text-white'>
-        <li className={`${satoshi.className} flex  gap-2  items-center text-[14px]`} >powered by<span className={`${monumentExtendedFont.className} text-[14px] uppercase`}>Niftables</span></li> 
+        <li className={`${satoshi.className} flex  gap-2  items-center text-[14px]`} >powered by<span className={`${monumentExtendedFont.className} text-[14px] uppercase`}>DavidIsaac</span></li> 
       </ul>
       </div>
     </div>
