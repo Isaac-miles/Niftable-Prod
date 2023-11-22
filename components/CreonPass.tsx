@@ -5,7 +5,7 @@ const monumentExtendedFont = localFont({src:'../util/fonts/monumentExtended/Monu
 const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 function CreonPass() {
-  // const bgImage = new URL(`/public/img/Video.png`, import.meta.url).href
+  const bgImage = new URL("/public/vdbg.jpeg", import.meta.url).href
  
   return (
   <div className='creonPass'>
@@ -21,7 +21,7 @@ function CreonPass() {
           {/* Image for small screen can also be dynamic */}
         <div className="xxsm:hidden  md:hidden lg:hidden flex-col justify-center items-start bg-black " >
             <div  className="">
-            <video src={require('public/subvideo.mp4')}
+            <video src={require('public/crystal.mp4')}
             autoPlay
             muted
             loop
@@ -29,7 +29,7 @@ function CreonPass() {
               <Image
               width={500}
               height={500}
-              src='/video.png'
+              src={bgImage}
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
@@ -64,7 +64,7 @@ function CreonPass() {
 
         <div className="xsm:hidden flex-col justify-center items-start bg-black" >
             <div  className="">
-            <video src={require('public/subvideo.mp4')}
+            <video src={require('public/crystal.mp4')}
             autoPlay
             muted
             loop
@@ -72,7 +72,7 @@ function CreonPass() {
               <Image
               width={700}
               height={800}
-              src='/video.png'
+              src={bgImage}
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
