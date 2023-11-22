@@ -6,8 +6,8 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 function ProfitThrough() {
 
-  const bgImage = new URL(`/public/img/creonLogo.png`, import.meta.url).href
-  const bgImageSM = new URL(`/public/img/creonlogoSM.png`, import.meta.url).href
+  // const bgImage = new URL(`/public/img/creonLogo.png`, import.meta.url).href
+  // const bgImageSM = new URL(`/public/img/creonlogoSM.png`, import.meta.url).href
  
   return (
   <div className='grid w-full content-center  px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 py-8 '>
@@ -26,7 +26,7 @@ function ProfitThrough() {
               <Image
               width={947}
               height={549}
-              src={bgImage}
+              src='/creonLogo.png'
               alt="banner logo" 
               className='rounded-sm'
               sizes="100%"
@@ -37,7 +37,7 @@ function ProfitThrough() {
               <Image
               width={650}
               height={500}
-              src={bgImageSM}
+              src='/creonlogoSM.png'
               alt="banner logo" 
               className='rounded-sm'
               sizes="100%"

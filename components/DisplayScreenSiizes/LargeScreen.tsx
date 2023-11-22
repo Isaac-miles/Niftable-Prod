@@ -11,7 +11,7 @@ function LargeScreen() {
       <CreonPass/>
     </section>
 
-    <section className=''>
+    <section className='hidden lg:inline'>
       <ProfitThrough/>
     </section>
 

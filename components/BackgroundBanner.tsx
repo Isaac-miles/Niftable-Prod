@@ -9,7 +9,7 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 const BackgroundBanner = () => {
 
-    const bannerImage = new URL(`/public/img/footerBGImage.png`, import.meta.url).href
+    // const bannerImage = new URL(`/public/img/footerBGImage.png`, import.meta.url).href
  
 
 return (
@@ -18,7 +18,7 @@ return (
       <div className="absolute top-0 left-0 w-screen lg:h-[95vh] -z-10">
         <Image 
         fill={true} 
-        src={bannerImage}
+        src='/footerBGImage.png'
         alt="banner logo" 
         sizes="100%"
          priority/> 

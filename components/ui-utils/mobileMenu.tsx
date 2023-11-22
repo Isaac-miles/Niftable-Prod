@@ -19,9 +19,9 @@ type Props ={
 function MobileMenu({toggle,setToggle}:Props) {
   return (
     <div className="fixed bg-black/50 w-full h-screen z-20 left-0 top-0 ">
-      <div className="flex-col space-y-4 bg-black w-[60%] h-screen float-right">
+      <div className="flex-col space-y-4 bg-black w-[70%] h-screen float-right">
 
-        <div className=' flex justify-between items-center pl-4 pr-1 w-full h-16'>
+        <div className=' flex justify-between items-center pl-4 pr-9 w-full h-16'>
               <button
                 className={`${satoshi.className}   w-20 h-[1.8rem] border rounded `}
               >

@@ -18,6 +18,8 @@ module.exports = {
         'nifxl': {'min': '1266.67px', 'max': '1536px'},
         'xxxl': {'min': '1537px', 'max': '1920px'},
         'sxm': {'min': '540px', 'max': '640px'},
+        'xrm': {'min': '390px', 'max': '420px'},
+        
       },
       backgroundImage: {
         'gradient-to-b':

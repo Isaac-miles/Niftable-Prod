@@ -8,8 +8,7 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 
 const Banner = () => {
-
-    const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
+    // const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
 
   return (
  
@@ -17,9 +16,9 @@ const Banner = () => {
       <div className="absolute top-0 left-0 w-screen h-[95vh] -z-10">
         <Image 
         fill={true} 
-        src={bannerImage}
+        src='/banner.jpg'
         alt="banner logo" 
-        // objectFit="cover" 
+        objectFit="cover" 
         sizes="100%"
          priority/> 
            
@@ -30,7 +29,7 @@ const Banner = () => {
            <span className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2`}>{BannerTitleFromDb.paragraphForLargeScreen}</span>
       </div>
 
-      <div className="lg:hidden  relative w-[345px] lg:w-[90%] md:min-w-[80%] top-[10rem]  md:top-96 xlmd:top-[15rem] xsm:top-[12rem]  bg-transparent">
+      <div className="lg:hidden  relative w-[345px] lg:w-[90%] md:min-w-[80%] top-[10rem] xrm:top-[26rem] md:top-96 xlmd:top-[15rem] xsm:top-[12rem]  bg-transparent">
            <h1 className={`${monumentExtendedFont.className} bannerHeading mb-3 `}>{BannerTitleFromDb.TitleForMediumScreen}</h1>
            <div className={`${satoshi.className} bannerParagraph bannerParagraphExtra border border-x-0 border-y-2 `}>{BannerTitleFromDb.paragraphForMediumScreen}</div>
       </div>

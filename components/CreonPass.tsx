@@ -5,8 +5,7 @@ const monumentExtendedFont = localFont({src:'../util/fonts/monumentExtended/Monu
 const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 function CreonPass() {
-
-  const bgImage = new URL(`/public/img/Video.png`, import.meta.url).href
+  // const bgImage = new URL(`/public/img/Video.png`, import.meta.url).href
  
   return (
   <div className='creonPass'>
@@ -25,7 +24,7 @@ function CreonPass() {
               <Image
               width={500}
               height={500}
-              src={bgImage}
+              src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
@@ -63,7 +62,7 @@ function CreonPass() {
               <Image
               width={700}
               height={800}
-              src={bgImage}
+              src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"

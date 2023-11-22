@@ -7,7 +7,7 @@
     @apply absolute  flex items-center h-20 bg-transparent text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
   }
   body{
-    @apply overflow-x-hidden bg-black
+    @apply  bg-black !scrollbar-track-transparent !scrollbar-thumb-[#AB23FF] overflow-x-hidden
   }
 }
 
@@ -64,7 +64,7 @@ background-clip: text;
 
 }
 .bgimg{
-  background: url('../public/img/CREON.png'), lightgray 50% / cover no-repeat;
+  background: url('/CREON.png'), lightgray 50% / cover no-repeat;
 }
 .bgimg::after {
   content: '';
