@@ -24,7 +24,7 @@ export default function BasicAccordion({
   logoTitle,
 }: AccordionProps) {
   return (
-    <div className="flex gap-10 items-start flex-col h-[82] ">
+    <div className="flex gap-10 items-start flex-col  ">
       <Accordion
         className={`${satoshi.className} !bg-black !text-white font-light border-x-0 border-b-2 !border-[#13171d]`}
       >

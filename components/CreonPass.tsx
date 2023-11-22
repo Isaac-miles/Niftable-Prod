@@ -26,14 +26,14 @@ function CreonPass() {
             muted
             loop
             />
-              {/* <Image
+              <Image
               width={500}
               height={500}
               src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
-              priority/>  */}
+              priority/> 
             </div>
         </div> 
 
@@ -69,14 +69,14 @@ function CreonPass() {
             muted
             loop
             />
-              {/* <Image
+              <Image
               width={700}
               height={800}
               src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
-              priority/>  */}
+              priority/> 
             </div>
         </div> 
   

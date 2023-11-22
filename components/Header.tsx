@@ -12,7 +12,7 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 const Header = () => {
 
   const [toggle, setToggle] = useState(false)
-    const brandImage = new URL(`/public/Logo.jpg`, import.meta.url).href
+    const brandImage = new URL(`/public/Logo.svg`, import.meta.url).href
 
  
   return (
