@@ -16,12 +16,17 @@ return (
  
   <div className="flex  flex-col -w-[300px]  md:space-x-4 lg:justify-center items-start md:items-start  ">
       <div className="absolute top-0 left-0 w-screen lg:h-[95vh] -z-10">
-        <Image 
+      <video src={require('/public/footerBGVid.mp4')} 
+      autoPlay
+      muted
+      loop
+      />
+        {/* <Image 
         fill={true} 
         src='/footerBGImage.png'
         alt="banner logo" 
         sizes="100%"
-         priority/> 
+         priority/>  */}
            
       </div> 
       

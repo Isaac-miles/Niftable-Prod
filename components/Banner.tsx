@@ -14,7 +14,7 @@ const Banner = () => {
  
     <div className="flex  flex-col  py-16 md:space-x-4 lg:justify-center items-start md:items-start 2xl:items-center lg:items-center  ">
       <div className="absolute top-0 left-0 w-screen h-[95vh] -z-10">
-      <video src={require('../assets/vid/mainvideo.mov')} 
+      <video src={require('public/mainvideo.mov')} 
       autoPlay
       muted
       loop

@@ -21,7 +21,7 @@ function CreonPass() {
           {/* Image for small screen can also be dynamic */}
         <div className="xxsm:hidden  md:hidden lg:hidden flex-col justify-center items-start bg-black " >
             <div  className="">
-            <video src={require('../assets/vid/subvideo.mp4')}
+            <video src={require('public/subvideo.mp4')}
             autoPlay
             muted
             loop
@@ -64,7 +64,7 @@ function CreonPass() {
 
         <div className="xsm:hidden flex-col justify-center items-start bg-black" >
             <div  className="">
-            <video src={require('../assets/vid/subvideo.mp4')}
+            <video src={require('public/subvideo.mp4')}
             autoPlay
             muted
             loop

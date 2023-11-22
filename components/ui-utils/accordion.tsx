@@ -24,12 +24,12 @@ export default function BasicAccordion({
   logoTitle,
 }: AccordionProps) {
   return (
-    <div className="flex gap-10 items-start flex-col h-[82] bg-black">
+    <div className="flex gap-10 items-start flex-col h-[82] ">
       <Accordion
-        className={`${satoshi.className} bg-black text-white font-light border-x-0 border-b-2 border-[#13171d]`}
+        className={`${satoshi.className} !bg-black !text-white font-light border-x-0 border-b-2 !border-[#13171d]`}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon className="!bg-black !text-white"/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -43,8 +43,8 @@ export default function BasicAccordion({
             {title}
           </Typography>
         </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={`${satoshi.className} pl-[80px]`}>
+        <AccordionDetails className="!text-white !bg-black">
+          <Typography className={`${satoshi.className} !text-white !bg-black pl-[80px]`}>
             {summary}
           </Typography>
         </AccordionDetails>
