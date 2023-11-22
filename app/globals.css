@@ -2,13 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base{
+  header{
+    @apply absolute  flex items-center h-20 bg-transparent text-white justify-between w-full px-4 py-0 transition-all lg:px-4 lg:py-0
+  }
+  body{
+    @apply overflow-x-hidden bg-black
+  }
 }
+
+@layer components{
+  .headerLinkHorizontal{
+    @apply hidden lg:!inline relative cursor-pointer text-sm font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3]
+
+  }
+  .headerLinkVertical{
+    @apply relative p-4 border border-x-0 border-[#13171d]  cursor-pointer text-sm font-medium  text-white transition duration-[.4s] hover:text-[#b3b3b3]
+
+  }
+  .bannerHeading{
+    @apply text-white font-normal uppercase leading-[110%] not-italic 2xl:text-[44px] sm:text-[32px] lg:!text-[44px] md:text-[44px] xlmd:text-[44px] xsm:!text-[32px] xxsm:text-[32px]
+  }
+  .bannerParagraph{
+    @apply text-[18px] lg:text-[18px] md:text-[18px] 2xl:text-[18px] nifxl:text-[22px]  leading-[130%] font-bold not-italic
+  }
+  .missionStatement{
+    @apply text-white font-normal uppercase leading-[120%] not-italic 2xl:text-[68px] text-[28px] lg:text-[28px] xsm:!text-[22px] xsm:mt-8 xsm:pt-8 xlmd:pt-0 xlmd:text-[20px]
+  }
+  .accordionHeading{
+    @apply text-white font-bold w-[50%] h-[83px] ml-5 mt-6 capitalize leading-[130%] not-italic 2xl:text-[68px] text-[18px] lg:text-[18px]
+  }
+  .creonPass{
+    @apply grid xsm:grid-cols-1 sxm:grid-cols-2 sm:grid-cols-2 md:grid-cols-2  nifxl:grid-cols-2 lg:grid-cols-2   w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 pt-0 pb-4 bg-black 
+  }
+  .creonBtn{
+    @apply min-w-[87%] h-[54px] xsm:w-[100%] sxm:w-[100%] text-white text-[18px] font-normal rounded not-italic  bg-gradient-to-r from-violet-500 to-fuchsia-500
+
+  }
+}
+.bannerParagraphExtra {
+  display: inline-block;
+  background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-image: linear-gradient(to right, #3d8bff, #ab23ff) 1;
+}
+.video {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.missionStatementSub{
+background: var(--Linear, linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+.bgimg{
+  background: url('../public/img/CREON.png'), lightgray 50% / cover no-repeat;
+}
+.bgimg::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0deg,
+      rgba(0, 0, 0,5),
+      transparent 30%,
+      transparent)
+    }
