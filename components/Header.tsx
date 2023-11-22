@@ -12,14 +12,15 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 const Header = () => {
 
   const [toggle, setToggle] = useState(false)
+    const brandImage = new URL(`/public/Logo.jpg`, import.meta.url).href
 
-    const logo = new URL(`/public/logo.png`, import.meta.url).href
+ 
   return (
    <header className=" z-40" >
 
     <div className="flex items-center space-x-2 md:space-x-10 ">
       <Image 
-      src={logo}
+      src={brandImage}
       alt="niftables"
       width={100}
       height={100}
