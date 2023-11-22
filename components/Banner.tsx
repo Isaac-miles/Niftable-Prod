@@ -8,6 +8,7 @@ const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
 
 
 const Banner = () => {
+  // these can be dynamic from database
     // const bannerImage = new URL(`/public/img/banner.jpg`, import.meta.url).href
 
   return (
