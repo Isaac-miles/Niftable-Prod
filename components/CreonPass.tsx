@@ -21,14 +21,19 @@ function CreonPass() {
           {/* Image for small screen can also be dynamic */}
         <div className="xxsm:hidden  md:hidden lg:hidden flex-col justify-center items-start bg-black " >
             <div  className="">
-              <Image
+            <video src={require('../assets/vid/subvideo.mp4')}
+            autoPlay
+            muted
+            loop
+            />
+              {/* <Image
               width={500}
               height={500}
               src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
-              priority/> 
+              priority/>  */}
             </div>
         </div> 
 
@@ -59,14 +64,19 @@ function CreonPass() {
 
         <div className="xsm:hidden flex-col justify-center items-start bg-black" >
             <div  className="">
-              <Image
+            <video src={require('../assets/vid/subvideo.mp4')}
+            autoPlay
+            muted
+            loop
+            />
+              {/* <Image
               width={700}
               height={800}
               src='/video.png'
               alt="banner logo" 
               // objectFit="cover" 
               sizes="100%"
-              priority/> 
+              priority/>  */}
             </div>
         </div> 
   

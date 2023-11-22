@@ -7,7 +7,6 @@ import { FaBars } from "react-icons/fa6";
 import ListStyleHorizontal from './ui-utils/listStyleHorizontal';
 import localFont from 'next/font/local'
 const satoshi = localFont({src:'../util/fonts/satoshi/Satoshi-Regular.ttf'})
-
 import {HiOutlineXMark } from "react-icons/hi2";
 
 const Header = () => {
@@ -31,7 +30,6 @@ const Header = () => {
       className="cursor-pointer object-contain w-auto h-auto"/>
      
     </div>
-
     <div className="flex items-center space-x-2 text-sm font-light ">
     
     <ul   className={`${satoshi.className} hidden space-x-20 md:flex lg:flex lg:mr-20  `}>
