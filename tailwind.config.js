@@ -20,6 +20,7 @@ module.exports = {
         'sxm': {'min': '540px', 'max': '640px'},
         'xrm': {'min': '390px', 'max': '420px'},
         'xxrm': {'min': '480px', 'max': '539px'},
+        'sg': {'min': '540px', 'max': '668px'},
         
       },
       backgroundImage: {

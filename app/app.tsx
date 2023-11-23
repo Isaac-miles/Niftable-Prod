@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-    <section className='relative bg-gradient-to-b md:h-screen xsm:h-[65vh] xlmd:h-[125vh] xxrm:h-[100vh]'>
+    <section className='relative bg-gradient-to-b '>
     <Header/>
 
-    <div className='relative pl-4  mix-blend-mode: soft-light'>
+    <div className='relative pl-4  mix-blend-mode: soft-light md:h-screen xsm:h-[65vh] xlmd:h-[105vh] xxrm:h-[100vh] sg:h-[120vh]'>
       <Banner/>
      
     </div>

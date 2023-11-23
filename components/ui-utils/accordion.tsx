@@ -24,20 +24,24 @@ export default function BasicAccordion({
   logoTitle,
 }: AccordionProps) {
   return (
-    <div className="flex gap-10 items-start flex-col  ">
+    <div className="flex gap-10 items-start flex-col ">
       <Accordion
         className={`${satoshi.className} !bg-black !text-white font-light border-x-0 border-b-2 !border-[#13171d]`}
       >
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon className="!bg-black !text-white"/>}
+          className="flex !bg-black justify-end"
+          expandIcon={<ExpandMoreIcon className=" !text-white"/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <div className=" w-[83px] -ml-24 h-[83px]"></div>
+          <div className=" w-[83px] -ml-24 h-[83px] "></div>
+          <div className="flex">
           {logoTitle === "Limitless" ? <LimitlessLogo /> : null}
           {logoTitle === "Profit" ? <ProfitAndGrowthLogo /> : null}
           {logoTitle === "Transparent" ? <TransparentAndFairLogo /> : null}
           {logoTitle === "Engagement" ? <EngagementLogo /> : null}
+          </div>
+       
 
           <Typography className={`${satoshi.className} accordionHeading `}>
             {title}
