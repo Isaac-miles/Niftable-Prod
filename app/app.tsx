@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <section className='relative bg-gradient-to-b h-screen '>
+    <section className='relative bg-gradient-to-b md:h-screen xsm:h-[65vh] xlmd:h-[125vh] xxrm:h-[100vh]'>
     <Header/>
 
     <div className='relative pl-4  mix-blend-mode: soft-light'>
@@ -32,7 +32,7 @@ function App() {
        </div>
     </section>
 
-    <section className='xsm:mt-[36rem] xxsm:mt-[32rem] xlmd:mt-[32rem] lg:mt-[10rem] xl:mt-4'>
+    <section className='xsm:mt-[36rem] xxsm:mt-[32rem] xlmd:mt-[32rem] lg:mt-[10rem] xl:mt-4  '>
       <Footer/>
     </section>
     </>

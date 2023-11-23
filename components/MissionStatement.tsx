@@ -9,8 +9,9 @@ const monumentExtendedFont = localFont({
 
 function MissionStatement() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 nifxl:grid-cols-2 lg:grid-cols-2  w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 lg:pt-4 pb-4 bg-black">
-      <div className="group  md:-ml-2 bg-black px-0">
+    <div className="grid grid-cols-1 md:grid-cols-2 nifxl:grid-cols-2 lg:grid-cols-2  w-full content-center px-24 lg:px-16 nifxl:px-[80px] xlmd:px-2 lg:pt-4 pb-4 ">
+      
+      <div className="group  md:-ml-2 bg-black px-2">
         <div className="flex flex-col lg:w-[85%] xlmd:w-full items-start space-y-4  md:space-y-2.5 pl-0 md:pt-2 ">
           <h2
             className={`${monumentExtendedFont.className} missionStatement md:pb-4 md:pt-0 xlmd:pt-0`}
